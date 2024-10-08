@@ -1,0 +1,909 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27209D982CA80EA900901B10 /* GraphQLBootCampApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27209D972CA80EA900901B10 /* GraphQLBootCampApp.swift */; };
+		27209D9C2CA80EAB00901B10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27209D9B2CA80EAB00901B10 /* Assets.xcassets */; };
+		27209DA02CA80EAB00901B10 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27209D9F2CA80EAB00901B10 /* Preview Assets.xcassets */; };
+		27209DAA2CA80EAC00901B10 /* GraphQLBootCampTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27209DA92CA80EAC00901B10 /* GraphQLBootCampTests.swift */; };
+		27209DB42CA80EAC00901B10 /* GraphQLBootCampUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27209DB32CA80EAC00901B10 /* GraphQLBootCampUITests.swift */; };
+		27209DB62CA80EAC00901B10 /* GraphQLBootCampUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27209DB52CA80EAC00901B10 /* GraphQLBootCampUITestsLaunchTests.swift */; };
+		276F5B8F2CAB00040019B638 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 276F5B8E2CAB00040019B638 /* Apollo */; };
+		276F5B912CAB00040019B638 /* Apollo-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 276F5B902CAB00040019B638 /* Apollo-Dynamic */; };
+		276F5B932CAB00040019B638 /* ApolloAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 276F5B922CAB00040019B638 /* ApolloAPI */; };
+		276F5B952CAB00040019B638 /* ApolloSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 276F5B942CAB00040019B638 /* ApolloSQLite */; };
+		276F5B972CAB00040019B638 /* ApolloTestSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 276F5B962CAB00040019B638 /* ApolloTestSupport */; };
+		276F5B992CAB00040019B638 /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 276F5B982CAB00040019B638 /* ApolloWebSocket */; };
+		276F5BA52CABA3420019B638 /* ApolloNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276F5BA42CABA3420019B638 /* ApolloNetwork.swift */; };
+		279B99C52CB0AE6500AB220B /* BookReview.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 279B99C42CB0AE6500AB220B /* BookReview.graphql */; };
+		279B99C82CB0D6D400AB220B /* ReviewCommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B99C72CB0D6D400AB220B /* ReviewCommentView.swift */; };
+		279B99CB2CB0FC0D00AB220B /* BookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B99CA2CB0FC0D00AB220B /* BookModel.swift */; };
+		27AE5F722CB41EE400CC1854 /* ReviewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AE5F712CB41EE400CC1854 /* ReviewComponent.swift */; };
+		27AE5F762CB41F6200CC1854 /* DiscriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AE5F752CB41F6200CC1854 /* DiscriptionView.swift */; };
+		27AE5F782CB4262500CC1854 /* StarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AE5F772CB4262500CC1854 /* StarsView.swift */; };
+		27AE5F7A2CB42AF700CC1854 /* ReviewTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AE5F792CB42AF700CC1854 /* ReviewTextFieldView.swift */; };
+		27AE5F802CB4330800CC1854 /* BookReviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AE5F7F2CB4330800CC1854 /* BookReviewViewModel.swift */; };
+		27AE5F822CB4336A00CC1854 /* ReviewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AE5F812CB4336A00CC1854 /* ReviewProtocol.swift */; };
+		27AE5F872CB478DA00CC1854 /* AuthorDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AE5F862CB478DA00CC1854 /* AuthorDetailView.swift */; };
+		27AE5F892CB4790A00CC1854 /* AuthorDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AE5F882CB4790A00CC1854 /* AuthorDetailViewModel.swift */; };
+		27AE5F8C2CB4996300CC1854 /* AuthorReviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AE5F8B2CB4996300CC1854 /* AuthorReviewViewModel.swift */; };
+		27AE5F8E2CB49C9B00CC1854 /* AuthorReview.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 27AE5F8D2CB49C9B00CC1854 /* AuthorReview.graphql */; };
+		27ECDD0C2CAEC95F00E3EABA /* Books.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 27ECDD0B2CAEC95F00E3EABA /* Books.graphql */; };
+		27ECDD0F2CAECA2800E3EABA /* BooksGraphQLBootCamp in Frameworks */ = {isa = PBXBuildFile; productRef = 27ECDD0E2CAECA2800E3EABA /* BooksGraphQLBootCamp */; };
+		27ECDD112CAFA3F300E3EABA /* BooksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ECDD102CAFA3F300E3EABA /* BooksViewModel.swift */; };
+		27ECDD132CAFA50900E3EABA /* BooksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ECDD122CAFA50900E3EABA /* BooksView.swift */; };
+		27ECDD152CAFA5EB00E3EABA /* Author.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 27ECDD142CAFA5EB00E3EABA /* Author.graphql */; };
+		27ECDD192CAFA74C00E3EABA /* AuthorsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ECDD182CAFA74C00E3EABA /* AuthorsViewModel.swift */; };
+		27ECDD1B2CAFA76100E3EABA /* AuthorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ECDD1A2CAFA76100E3EABA /* AuthorsView.swift */; };
+		27ECDD1D2CAFAB5A00E3EABA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ECDD1C2CAFAB5A00E3EABA /* HomeView.swift */; };
+		27ECDD1F2CAFB23500E3EABA /* BookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ECDD1E2CAFB23500E3EABA /* BookView.swift */; };
+		27ECDD212CAFB27200E3EABA /* AuthorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ECDD202CAFB27200E3EABA /* AuthorView.swift */; };
+		27ECDD272CAFBAD100E3EABA /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ECDD262CAFBAD100E3EABA /* BookDetailView.swift */; };
+		27ECDD292CAFBBDA00E3EABA /* BookDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ECDD282CAFBBDA00E3EABA /* BookDetailViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		27209DA62CA80EAC00901B10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27209D8C2CA80EA900901B10 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27209D932CA80EA900901B10;
+			remoteInfo = GraphQLBootCamp;
+		};
+		27209DB02CA80EAC00901B10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27209D8C2CA80EA900901B10 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27209D932CA80EA900901B10;
+			remoteInfo = GraphQLBootCamp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		27209D942CA80EA900901B10 /* GraphQLBootCamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraphQLBootCamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27209D972CA80EA900901B10 /* GraphQLBootCampApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLBootCampApp.swift; sourceTree = "<group>"; };
+		27209D9B2CA80EAB00901B10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		27209D9D2CA80EAB00901B10 /* GraphQLBootCamp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GraphQLBootCamp.entitlements; sourceTree = "<group>"; };
+		27209D9F2CA80EAB00901B10 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		27209DA52CA80EAC00901B10 /* GraphQLBootCampTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraphQLBootCampTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		27209DA92CA80EAC00901B10 /* GraphQLBootCampTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLBootCampTests.swift; sourceTree = "<group>"; };
+		27209DAF2CA80EAC00901B10 /* GraphQLBootCampUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraphQLBootCampUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		27209DB32CA80EAC00901B10 /* GraphQLBootCampUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLBootCampUITests.swift; sourceTree = "<group>"; };
+		27209DB52CA80EAC00901B10 /* GraphQLBootCampUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLBootCampUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		276F5BA42CABA3420019B638 /* ApolloNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloNetwork.swift; sourceTree = "<group>"; };
+		279B99C42CB0AE6500AB220B /* BookReview.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = BookReview.graphql; sourceTree = "<group>"; };
+		279B99C72CB0D6D400AB220B /* ReviewCommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCommentView.swift; sourceTree = "<group>"; };
+		279B99C92CB0ECF700AB220B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		279B99CA2CB0FC0D00AB220B /* BookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
+		27AE5F712CB41EE400CC1854 /* ReviewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewComponent.swift; sourceTree = "<group>"; };
+		27AE5F752CB41F6200CC1854 /* DiscriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscriptionView.swift; sourceTree = "<group>"; };
+		27AE5F772CB4262500CC1854 /* StarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarsView.swift; sourceTree = "<group>"; };
+		27AE5F792CB42AF700CC1854 /* ReviewTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTextFieldView.swift; sourceTree = "<group>"; };
+		27AE5F7F2CB4330800CC1854 /* BookReviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookReviewViewModel.swift; sourceTree = "<group>"; };
+		27AE5F812CB4336A00CC1854 /* ReviewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewProtocol.swift; sourceTree = "<group>"; };
+		27AE5F862CB478DA00CC1854 /* AuthorDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorDetailView.swift; sourceTree = "<group>"; };
+		27AE5F882CB4790A00CC1854 /* AuthorDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorDetailViewModel.swift; sourceTree = "<group>"; };
+		27AE5F8B2CB4996300CC1854 /* AuthorReviewViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorReviewViewModel.swift; sourceTree = "<group>"; };
+		27AE5F8D2CB49C9B00CC1854 /* AuthorReview.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = AuthorReview.graphql; sourceTree = "<group>"; };
+		27ECDD0B2CAEC95F00E3EABA /* Books.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Books.graphql; sourceTree = "<group>"; };
+		27ECDD102CAFA3F300E3EABA /* BooksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksViewModel.swift; sourceTree = "<group>"; };
+		27ECDD122CAFA50900E3EABA /* BooksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksView.swift; sourceTree = "<group>"; };
+		27ECDD142CAFA5EB00E3EABA /* Author.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Author.graphql; sourceTree = "<group>"; };
+		27ECDD182CAFA74C00E3EABA /* AuthorsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorsViewModel.swift; sourceTree = "<group>"; };
+		27ECDD1A2CAFA76100E3EABA /* AuthorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorsView.swift; sourceTree = "<group>"; };
+		27ECDD1C2CAFAB5A00E3EABA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		27ECDD1E2CAFB23500E3EABA /* BookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookView.swift; sourceTree = "<group>"; };
+		27ECDD202CAFB27200E3EABA /* AuthorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorView.swift; sourceTree = "<group>"; };
+		27ECDD262CAFBAD100E3EABA /* BookDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailView.swift; sourceTree = "<group>"; };
+		27ECDD282CAFBBDA00E3EABA /* BookDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27209D912CA80EA900901B10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				276F5B932CAB00040019B638 /* ApolloAPI in Frameworks */,
+				276F5B992CAB00040019B638 /* ApolloWebSocket in Frameworks */,
+				276F5B972CAB00040019B638 /* ApolloTestSupport in Frameworks */,
+				276F5B952CAB00040019B638 /* ApolloSQLite in Frameworks */,
+				276F5B8F2CAB00040019B638 /* Apollo in Frameworks */,
+				276F5B912CAB00040019B638 /* Apollo-Dynamic in Frameworks */,
+				27ECDD0F2CAECA2800E3EABA /* BooksGraphQLBootCamp in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27209DA22CA80EAC00901B10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27209DAC2CA80EAC00901B10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27209D8B2CA80EA900901B10 = {
+			isa = PBXGroup;
+			children = (
+				27209D962CA80EA900901B10 /* GraphQLBootCamp */,
+				27209DA82CA80EAC00901B10 /* GraphQLBootCampTests */,
+				27209DB22CA80EAC00901B10 /* GraphQLBootCampUITests */,
+				27209D952CA80EA900901B10 /* Products */,
+				27B8A9C02CAC85770087E3B7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		27209D952CA80EA900901B10 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27209D942CA80EA900901B10 /* GraphQLBootCamp.app */,
+				27209DA52CA80EAC00901B10 /* GraphQLBootCampTests.xctest */,
+				27209DAF2CA80EAC00901B10 /* GraphQLBootCampUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27209D962CA80EA900901B10 /* GraphQLBootCamp */ = {
+			isa = PBXGroup;
+			children = (
+				279B99C92CB0ECF700AB220B /* Info.plist */,
+				27209D972CA80EA900901B10 /* GraphQLBootCampApp.swift */,
+				27ECDD1C2CAFAB5A00E3EABA /* HomeView.swift */,
+				276F5B9A2CAB9D750019B638 /* graphql */,
+				27ECDD172CAFA71100E3EABA /* Authors */,
+				27ECDD162CAFA70900E3EABA /* Books */,
+				27AE5F7C2CB42F3000CC1854 /* Network */,
+				27ECDD222CAFB7AE00E3EABA /* Common */,
+				27209D9B2CA80EAB00901B10 /* Assets.xcassets */,
+				27209D9D2CA80EAB00901B10 /* GraphQLBootCamp.entitlements */,
+				27209D9E2CA80EAB00901B10 /* Preview Content */,
+			);
+			path = GraphQLBootCamp;
+			sourceTree = "<group>";
+		};
+		27209D9E2CA80EAB00901B10 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				27209D9F2CA80EAB00901B10 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		27209DA82CA80EAC00901B10 /* GraphQLBootCampTests */ = {
+			isa = PBXGroup;
+			children = (
+				27209DA92CA80EAC00901B10 /* GraphQLBootCampTests.swift */,
+			);
+			path = GraphQLBootCampTests;
+			sourceTree = "<group>";
+		};
+		27209DB22CA80EAC00901B10 /* GraphQLBootCampUITests */ = {
+			isa = PBXGroup;
+			children = (
+				27209DB32CA80EAC00901B10 /* GraphQLBootCampUITests.swift */,
+				27209DB52CA80EAC00901B10 /* GraphQLBootCampUITestsLaunchTests.swift */,
+			);
+			path = GraphQLBootCampUITests;
+			sourceTree = "<group>";
+		};
+		276F5B9A2CAB9D750019B638 /* graphql */ = {
+			isa = PBXGroup;
+			children = (
+				27ECDD0B2CAEC95F00E3EABA /* Books.graphql */,
+				27ECDD142CAFA5EB00E3EABA /* Author.graphql */,
+				279B99C42CB0AE6500AB220B /* BookReview.graphql */,
+				27AE5F8D2CB49C9B00CC1854 /* AuthorReview.graphql */,
+			);
+			path = graphql;
+			sourceTree = "<group>";
+		};
+		279B99C62CB0D18100AB220B /* Review */ = {
+			isa = PBXGroup;
+			children = (
+				279B99C72CB0D6D400AB220B /* ReviewCommentView.swift */,
+				27AE5F792CB42AF700CC1854 /* ReviewTextFieldView.swift */,
+				27AE5F772CB4262500CC1854 /* StarsView.swift */,
+			);
+			path = Review;
+			sourceTree = "<group>";
+		};
+		27AE5F732CB41F3800CC1854 /* Discription */ = {
+			isa = PBXGroup;
+			children = (
+				27AE5F752CB41F6200CC1854 /* DiscriptionView.swift */,
+			);
+			path = Discription;
+			sourceTree = "<group>";
+		};
+		27AE5F742CB41F4A00CC1854 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				279B99CA2CB0FC0D00AB220B /* BookModel.swift */,
+				27AE5F812CB4336A00CC1854 /* ReviewProtocol.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		27AE5F7B2CB42EFF00CC1854 /* BooksView */ = {
+			isa = PBXGroup;
+			children = (
+				27ECDD122CAFA50900E3EABA /* BooksView.swift */,
+				27ECDD102CAFA3F300E3EABA /* BooksViewModel.swift */,
+				27ECDD1E2CAFB23500E3EABA /* BookView.swift */,
+			);
+			path = BooksView;
+			sourceTree = "<group>";
+		};
+		27AE5F7C2CB42F3000CC1854 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				276F5BA42CABA3420019B638 /* ApolloNetwork.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		27AE5F7E2CB432E600CC1854 /* Review */ = {
+			isa = PBXGroup;
+			children = (
+				27AE5F712CB41EE400CC1854 /* ReviewComponent.swift */,
+				27AE5F7F2CB4330800CC1854 /* BookReviewViewModel.swift */,
+				27AE5F8B2CB4996300CC1854 /* AuthorReviewViewModel.swift */,
+			);
+			name = Review;
+			path = ../Books/Review;
+			sourceTree = "<group>";
+		};
+		27AE5F832CB477E400CC1854 /* AuthorsView */ = {
+			isa = PBXGroup;
+			children = (
+				27ECDD1A2CAFA76100E3EABA /* AuthorsView.swift */,
+				27ECDD182CAFA74C00E3EABA /* AuthorsViewModel.swift */,
+				27ECDD202CAFB27200E3EABA /* AuthorView.swift */,
+			);
+			path = AuthorsView;
+			sourceTree = "<group>";
+		};
+		27AE5F852CB478BF00CC1854 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				27AE5F862CB478DA00CC1854 /* AuthorDetailView.swift */,
+				27AE5F882CB4790A00CC1854 /* AuthorDetailViewModel.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		27B8A9C02CAC85770087E3B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		27ECDD162CAFA70900E3EABA /* Books */ = {
+			isa = PBXGroup;
+			children = (
+				27AE5F7B2CB42EFF00CC1854 /* BooksView */,
+				27ECDD252CAFBAA800E3EABA /* Details */,
+			);
+			path = Books;
+			sourceTree = "<group>";
+		};
+		27ECDD172CAFA71100E3EABA /* Authors */ = {
+			isa = PBXGroup;
+			children = (
+				27AE5F832CB477E400CC1854 /* AuthorsView */,
+				27AE5F852CB478BF00CC1854 /* Details */,
+			);
+			path = Authors;
+			sourceTree = "<group>";
+		};
+		27ECDD222CAFB7AE00E3EABA /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				27AE5F742CB41F4A00CC1854 /* Model */,
+				27AE5F7E2CB432E600CC1854 /* Review */,
+				27AE5F732CB41F3800CC1854 /* Discription */,
+				279B99C62CB0D18100AB220B /* Review */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		27ECDD252CAFBAA800E3EABA /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				27ECDD262CAFBAD100E3EABA /* BookDetailView.swift */,
+				27ECDD282CAFBBDA00E3EABA /* BookDetailViewModel.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		27209D932CA80EA900901B10 /* GraphQLBootCamp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27209DB92CA80EAC00901B10 /* Build configuration list for PBXNativeTarget "GraphQLBootCamp" */;
+			buildPhases = (
+				27209D902CA80EA900901B10 /* Sources */,
+				27209D912CA80EA900901B10 /* Frameworks */,
+				27209D922CA80EA900901B10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GraphQLBootCamp;
+			packageProductDependencies = (
+				276F5B8E2CAB00040019B638 /* Apollo */,
+				276F5B902CAB00040019B638 /* Apollo-Dynamic */,
+				276F5B922CAB00040019B638 /* ApolloAPI */,
+				276F5B942CAB00040019B638 /* ApolloSQLite */,
+				276F5B962CAB00040019B638 /* ApolloTestSupport */,
+				276F5B982CAB00040019B638 /* ApolloWebSocket */,
+				27ECDD0E2CAECA2800E3EABA /* BooksGraphQLBootCamp */,
+			);
+			productName = GraphQLBootCamp;
+			productReference = 27209D942CA80EA900901B10 /* GraphQLBootCamp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		27209DA42CA80EAC00901B10 /* GraphQLBootCampTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27209DBC2CA80EAC00901B10 /* Build configuration list for PBXNativeTarget "GraphQLBootCampTests" */;
+			buildPhases = (
+				27209DA12CA80EAC00901B10 /* Sources */,
+				27209DA22CA80EAC00901B10 /* Frameworks */,
+				27209DA32CA80EAC00901B10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27209DA72CA80EAC00901B10 /* PBXTargetDependency */,
+			);
+			name = GraphQLBootCampTests;
+			productName = GraphQLBootCampTests;
+			productReference = 27209DA52CA80EAC00901B10 /* GraphQLBootCampTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		27209DAE2CA80EAC00901B10 /* GraphQLBootCampUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27209DBF2CA80EAC00901B10 /* Build configuration list for PBXNativeTarget "GraphQLBootCampUITests" */;
+			buildPhases = (
+				27209DAB2CA80EAC00901B10 /* Sources */,
+				27209DAC2CA80EAC00901B10 /* Frameworks */,
+				27209DAD2CA80EAC00901B10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27209DB12CA80EAC00901B10 /* PBXTargetDependency */,
+			);
+			name = GraphQLBootCampUITests;
+			productName = GraphQLBootCampUITests;
+			productReference = 27209DAF2CA80EAC00901B10 /* GraphQLBootCampUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27209D8C2CA80EA900901B10 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					27209D932CA80EA900901B10 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					27209DA42CA80EAC00901B10 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 27209D932CA80EA900901B10;
+					};
+					27209DAE2CA80EAC00901B10 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 27209D932CA80EA900901B10;
+					};
+				};
+			};
+			buildConfigurationList = 27209D8F2CA80EA900901B10 /* Build configuration list for PBXProject "GraphQLBootCamp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 27209D8B2CA80EA900901B10;
+			packageReferences = (
+				276F5B8D2CAB00040019B638 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				27ECDD0D2CAECA2800E3EABA /* XCLocalSwiftPackageReference "BooksGraphQLBootCamp" */,
+			);
+			productRefGroup = 27209D952CA80EA900901B10 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27209D932CA80EA900901B10 /* GraphQLBootCamp */,
+				27209DA42CA80EAC00901B10 /* GraphQLBootCampTests */,
+				27209DAE2CA80EAC00901B10 /* GraphQLBootCampUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27209D922CA80EA900901B10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27ECDD152CAFA5EB00E3EABA /* Author.graphql in Resources */,
+				27209DA02CA80EAB00901B10 /* Preview Assets.xcassets in Resources */,
+				27AE5F8E2CB49C9B00CC1854 /* AuthorReview.graphql in Resources */,
+				27209D9C2CA80EAB00901B10 /* Assets.xcassets in Resources */,
+				279B99C52CB0AE6500AB220B /* BookReview.graphql in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27209DA32CA80EAC00901B10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27209DAD2CA80EAC00901B10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27209D902CA80EA900901B10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				279B99CB2CB0FC0D00AB220B /* BookModel.swift in Sources */,
+				27ECDD132CAFA50900E3EABA /* BooksView.swift in Sources */,
+				27ECDD112CAFA3F300E3EABA /* BooksViewModel.swift in Sources */,
+				27ECDD1F2CAFB23500E3EABA /* BookView.swift in Sources */,
+				27ECDD192CAFA74C00E3EABA /* AuthorsViewModel.swift in Sources */,
+				27AE5F7A2CB42AF700CC1854 /* ReviewTextFieldView.swift in Sources */,
+				27AE5F722CB41EE400CC1854 /* ReviewComponent.swift in Sources */,
+				27209D982CA80EA900901B10 /* GraphQLBootCampApp.swift in Sources */,
+				27ECDD212CAFB27200E3EABA /* AuthorView.swift in Sources */,
+				27AE5F892CB4790A00CC1854 /* AuthorDetailViewModel.swift in Sources */,
+				27ECDD272CAFBAD100E3EABA /* BookDetailView.swift in Sources */,
+				27AE5F872CB478DA00CC1854 /* AuthorDetailView.swift in Sources */,
+				27ECDD0C2CAEC95F00E3EABA /* Books.graphql in Sources */,
+				27ECDD1B2CAFA76100E3EABA /* AuthorsView.swift in Sources */,
+				279B99C82CB0D6D400AB220B /* ReviewCommentView.swift in Sources */,
+				27AE5F8C2CB4996300CC1854 /* AuthorReviewViewModel.swift in Sources */,
+				27AE5F762CB41F6200CC1854 /* DiscriptionView.swift in Sources */,
+				27AE5F822CB4336A00CC1854 /* ReviewProtocol.swift in Sources */,
+				27AE5F802CB4330800CC1854 /* BookReviewViewModel.swift in Sources */,
+				27ECDD292CAFBBDA00E3EABA /* BookDetailViewModel.swift in Sources */,
+				27ECDD1D2CAFAB5A00E3EABA /* HomeView.swift in Sources */,
+				27AE5F782CB4262500CC1854 /* StarsView.swift in Sources */,
+				276F5BA52CABA3420019B638 /* ApolloNetwork.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27209DA12CA80EAC00901B10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27209DAA2CA80EAC00901B10 /* GraphQLBootCampTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27209DAB2CA80EAC00901B10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27209DB42CA80EAC00901B10 /* GraphQLBootCampUITests.swift in Sources */,
+				27209DB62CA80EAC00901B10 /* GraphQLBootCampUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		27209DA72CA80EAC00901B10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27209D932CA80EA900901B10 /* GraphQLBootCamp */;
+			targetProxy = 27209DA62CA80EAC00901B10 /* PBXContainerItemProxy */;
+		};
+		27209DB12CA80EAC00901B10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27209D932CA80EA900901B10 /* GraphQLBootCamp */;
+			targetProxy = 27209DB02CA80EAC00901B10 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		27209DB72CA80EAC00901B10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		27209DB82CA80EAC00901B10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		27209DBA2CA80EAC00901B10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GraphQLBootCamp/GraphQLBootCamp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GraphQLBootCamp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GraphQLBootCamp/Info.plist;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = come.zero.GraphQLBootCamp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		27209DBB2CA80EAC00901B10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GraphQLBootCamp/GraphQLBootCamp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GraphQLBootCamp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GraphQLBootCamp/Info.plist;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = come.zero.GraphQLBootCamp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		27209DBD2CA80EAC00901B10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = come.zero.GraphQLBootCampTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GraphQLBootCamp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GraphQLBootCamp";
+			};
+			name = Debug;
+		};
+		27209DBE2CA80EAC00901B10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = come.zero.GraphQLBootCampTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GraphQLBootCamp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GraphQLBootCamp";
+			};
+			name = Release;
+		};
+		27209DC02CA80EAC00901B10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = come.zero.GraphQLBootCampUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GraphQLBootCamp;
+			};
+			name = Debug;
+		};
+		27209DC12CA80EAC00901B10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = come.zero.GraphQLBootCampUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GraphQLBootCamp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27209D8F2CA80EA900901B10 /* Build configuration list for PBXProject "GraphQLBootCamp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27209DB72CA80EAC00901B10 /* Debug */,
+				27209DB82CA80EAC00901B10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27209DB92CA80EAC00901B10 /* Build configuration list for PBXNativeTarget "GraphQLBootCamp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27209DBA2CA80EAC00901B10 /* Debug */,
+				27209DBB2CA80EAC00901B10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27209DBC2CA80EAC00901B10 /* Build configuration list for PBXNativeTarget "GraphQLBootCampTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27209DBD2CA80EAC00901B10 /* Debug */,
+				27209DBE2CA80EAC00901B10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27209DBF2CA80EAC00901B10 /* Build configuration list for PBXNativeTarget "GraphQLBootCampUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27209DC02CA80EAC00901B10 /* Debug */,
+				27209DC12CA80EAC00901B10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		27ECDD0D2CAECA2800E3EABA /* XCLocalSwiftPackageReference "BooksGraphQLBootCamp" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = BooksGraphQLBootCamp;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		276F5B8D2CAB00040019B638 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.15.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		276F5B8E2CAB00040019B638 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 276F5B8D2CAB00040019B638 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		276F5B902CAB00040019B638 /* Apollo-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 276F5B8D2CAB00040019B638 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = "Apollo-Dynamic";
+		};
+		276F5B922CAB00040019B638 /* ApolloAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 276F5B8D2CAB00040019B638 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloAPI;
+		};
+		276F5B942CAB00040019B638 /* ApolloSQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 276F5B8D2CAB00040019B638 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloSQLite;
+		};
+		276F5B962CAB00040019B638 /* ApolloTestSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 276F5B8D2CAB00040019B638 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloTestSupport;
+		};
+		276F5B982CAB00040019B638 /* ApolloWebSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 276F5B8D2CAB00040019B638 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloWebSocket;
+		};
+		27ECDD0E2CAECA2800E3EABA /* BooksGraphQLBootCamp */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BooksGraphQLBootCamp;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 27209D8C2CA80EA900901B10 /* Project object */;
+}

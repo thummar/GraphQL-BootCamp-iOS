@@ -1,0 +1,56 @@
+query BookReview($bookId: ID!) {
+  bookReviews(id: $bookId) {
+    content
+    id
+    rating
+  }
+}
+
+mutation AddBookReview($bookId: ID!, $review: AddReviewInput!) {
+  addBookReview(bookID: $bookId, review: $review) {
+    content
+    rating
+    id
+  }
+}
+
+mutation DeleteBookReview($reviewId: ID!) {
+  deleteBookReview(id: $reviewId) {
+    content
+    rating
+    id
+  }
+}
+
+mutation EditBookReview($reviewId: ID!, $edits: EditReviewInput) {
+  updateBookReview(id: $reviewId, edits: $edits) {
+    content
+    rating
+    id
+  }
+}
+
+subscription BookReviewAddSubscription {
+  bookReviewAdded {
+    content
+    id
+    rating
+  }
+}
+  
+subscription BookReviewDeleteSubscription {
+  bookReviewDeleted {
+    content
+    id
+    rating
+  }
+}
+
+subscription BookReviewUpdateSubscription {
+  bookReviewUpdated {
+    content
+    id
+    rating
+  }
+}
+

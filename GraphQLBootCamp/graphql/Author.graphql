@@ -1,0 +1,29 @@
+query Author($authorId: ID!) {
+author(id: $authorId) {
+    about
+    id
+    isFavorite
+    name
+    reviews {
+      content
+      rating
+      id
+    }
+    books {
+      id
+      title
+      isFavorite
+      authors {
+        name
+      }
+    }
+  }
+}
+
+query Authors {
+  authors {
+    id
+    isFavorite
+    name
+  }
+}

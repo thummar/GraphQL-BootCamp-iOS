@@ -1,0 +1,92 @@
+"""
+A directive used by the Apollo iOS client to annotate operations or fragments that should be used exclusively for generating local cache mutations instead of as standard operations.
+"""
+directive @apollo_client_ios_localCacheMutation on QUERY | MUTATION | SUBSCRIPTION | FRAGMENT_DEFINITION
+
+"""
+A directive used by the Apollo iOS code generation engine to generate custom import statements in operation or fragment definition files. An import statement to import a module with the name provided in the `module` argument will be added to the generated definition file.
+"""
+directive @import(
+  """The name of the module to import."""
+  module: String!
+) repeatable on QUERY | MUTATION | SUBSCRIPTION | FRAGMENT_DEFINITION
+
+"""
+Directs the executor to defer this fragment when the `if` argument is true or undefined.
+"""
+directive @defer(
+  """Deferred when true or undefined."""
+  if: Boolean
+
+  """Unique name"""
+  label: String
+) on FRAGMENT_SPREAD | INLINE_FRAGMENT
+
+type Book {
+  id: ID!
+  title: String!
+  about: String!
+  isFavorite: Boolean
+  authors: [Author!]
+  reviews: [BookReview!]
+}
+
+type BookReview {
+  id: ID!
+  rating: Int!
+  content: String!
+  book: Book!
+}
+
+type Author {
+  id: ID!
+  name: String!
+  about: String!
+  isFavorite: Boolean!
+  books: [Book!]
+  reviews: [AutherReview!]
+}
+
+type AutherReview {
+  id: ID!
+  rating: Int!
+  content: String!
+  author: Author!
+}
+
+type Query {
+  books: [Book]
+  book(id: ID!): Book
+  bookReviews(id: ID!): [BookReview]
+  authors: [Author]
+  author(id: ID!): Author
+  authorReviews(id: ID!): [AutherReview]
+}
+
+type Mutation {
+  addBookReview(bookID: ID!, review: AddReviewInput!): BookReview
+  deleteBookReview(id: ID!): BookReview
+  updateBookReview(id: ID!, edits: EditReviewInput): BookReview
+  addAuthorReview(authorID: ID!, review: AddReviewInput!): AutherReview
+  deleteAuthorReview(id: ID!): AutherReview
+  updateAuthorReview(id: ID!, edits: EditReviewInput): AutherReview
+}
+
+input AddReviewInput {
+  rating: String!
+  content: String!
+}
+
+input EditReviewInput {
+  rating: String!
+  content: String!
+}
+
+type Subscription {
+  bookReviewAdded: BookReview
+  bookReviewUpdated: BookReview
+  bookReviewDeleted: BookReview
+  authorReviewAdded: AutherReview
+  authorReviewUpdated: AutherReview
+  authorReviewDeleted: AutherReview
+}
