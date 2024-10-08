@@ -1,2 +1,2 @@
-# GraphQL-BootCamp-iOS
-This project aims to provide an interactive platform for developers to learn and master GraphQL through practical application development.
+# graphQL-bootCamp-iOS
+The GraphQL BootCamp iOS app is designed to provide an interactive and comprehensive learning experience for developers looking to learning GraphQL. With a user-friendly interface, the app offers a variety of resources, including tutorials, hands-on exercises, and real-world projects. Users can explore key concepts, such as queries, mutations, and subscriptions, while implementing best practices for building scalable and efficient GraphQL APIs.
